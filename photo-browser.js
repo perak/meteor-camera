@@ -25,7 +25,8 @@ Template.viewfinder.rendered = function() {
       video.mozSrcObject = stream;
     } else {
       var vendorURL = window.URL || window.webkitURL;
-      video.src = vendorURL.createObjectURL(stream);
+      //video.src = vendorURL.createObjectURL(stream);
+      video.src = stream;
     }
     video.play();
 
